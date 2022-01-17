@@ -1,0 +1,31 @@
+package labTest;
+import java.util.Scanner;
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		float radius, height;
+		double baseArea, surfaceArea, volume;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.printf("Enter the radius: ");
+		radius = scan.nextFloat();
+		
+		System.out.printf("Enter the height: ");
+		height = scan.nextFloat();
+		
+		baseArea = Math.PI * radius * radius;
+		System.out.printf("The base area is: %.2f" , baseArea);
+		
+		surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+		System.out.printf("\nThe surface area is: %.2f" , surfaceArea);
+		
+		volume = baseArea * height;
+		System.out.printf("\nThe volume is: %.2f" , volume);
+	 
+
+	}
+
+}
